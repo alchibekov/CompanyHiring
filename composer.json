@@ -1,0 +1,19 @@
+{
+    "name": "emirum/companyhiring",
+    "description": "Simple company hiring script",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Timur Alchibekov",
+            "email": "atm.platinum@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": ""
+        }
+    }
+}

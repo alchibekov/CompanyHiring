@@ -1,21 +1,17 @@
 <?php
-function autoloader($class)
-{
-    include_once ($class. ".php");
-};
-spl_autoload_register("autoloader");
+require_once 'vendor/autoload.php';
 
 //creating Company Class instance with primary staff
-$google = new Company('Google', new Staff([new Person('Vasya'), new Person('Tolik'), new Person('Jigurda')]));
+$google = new App\Company('Google', new App\Staff([new App\Person('Vasya'), new App\Person('Tolik'), new App\Person('Jigurda')]));
 print_r($google);
 echo "<br><br>";
 
-$timur = new Person('Timur');
-$google->hire($timur);
+$artem = new App\Person('Artem');
+$google->hire($artem);
 print_r($google);
 echo "<br><br>";
 
-$google->fire($timur);
+$google->fire($artem);
 print_r($google);
 echo "<br><br>";
 

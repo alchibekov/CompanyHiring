@@ -1,4 +1,5 @@
 <?php
+namespace App;
 
 class Staff
 {
@@ -12,7 +13,7 @@ class Staff
         }
     }
 
-    public function hireEmployee($employee)
+    public function hireEmployee(Person $employee)
     {
         $this->staff[] = $employee;
     }
